@@ -119,7 +119,7 @@ php -i | grep 'Configuration File'
 Then `vim` into the first line item
 
 ```
-vim
+vim /etc/php5/cli/php.ini
 ```
 
 Then search for `date.timezone`, uncomment it, and set the value to `America/Chicago`. E.g.:
