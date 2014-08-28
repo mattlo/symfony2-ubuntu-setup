@@ -182,6 +182,12 @@ chown -R root:www-data app/logs
 chown -R root:www-data app/config/parameters.yml
 ```
 
+#### On OS X
+```
+sudo chmod +a "_www allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
+sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" app/cache app/logs
+```
+
 ### Symfony2 Configuration
 
 This file should mimic your `app/config/parameters.yml` but obviously not have the same values
